@@ -1,5 +1,7 @@
-const inquirer = require("inquirer")
-const { Triangle, Circle, Square } = require("./lib/shapes")
+const inquirer = require("inquirer");
+const { Triangle, Circle, Square } = require("./lib/shapes");
+const Text = require("./lib/text");
+const writeSvg = require("./lib/writeFile")
 
 inquirer
     .prompt([
@@ -32,14 +34,17 @@ inquirer
         switch (answers.shape){
             case "Triangle":
                 var shape = new Triangle()
-                shape.setColor(answers.color)
-                ;
                 break;
             case "Circle":
-                new Circle(...args).render();
+                var shape = new Circle();
                 break;
             case "Square":
-                new Square(...args).render();
+                var shape = new Square();
                 break;
         }
+        shape.setColor(answers.color);
+        var text = new Text()
+        text.setText(answers.text);
+        text.setTextColor(answers.textColor);
+        writeSvg(shape.render(), text.render());
     });
