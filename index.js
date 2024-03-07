@@ -8,13 +8,11 @@ inquirer
         {
             type: "input",
             name: "text",
-            default: "WWW",
             message: "Inner shape text (3 character limit):"
         },
         {
             type: "input",
             name: "textColor",
-            default: "Blue",
             message: "Text Color by keyword or hexadecimal:"
         },
         {
@@ -26,7 +24,6 @@ inquirer
         {
             type: "input",
             name: "color",
-            default: "Orange",
             message: "Shape Color by keyword or hexadecimal:"
         }
     ])
