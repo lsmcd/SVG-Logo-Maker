@@ -4,6 +4,11 @@
 
 SVG Logo generator I made to practice Node.js and Object Oriented Programming
 
+APIs used:
+
+- <https://jestjs.io>
+- <https://nodejs.org>
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Table of Contents
