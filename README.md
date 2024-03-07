@@ -8,6 +8,7 @@ APIs used:
 
 - <https://jestjs.io>
 - <https://nodejs.org>
+- <https://github.com/SBoudrias/Inquirer.js>
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
